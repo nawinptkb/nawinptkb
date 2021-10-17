@@ -61,7 +61,7 @@ class Ui_Dialog(object):
         self.Clear_entry = QtWidgets.QPushButton(Dialog, clicked = lambda:self.remove_it())
         self.Clear_entry.setGeometry(QtCore.QRect(180, 130, 113, 32))
         self.Clear_entry.setObjectName("Clear_entry")
-        self.Power2 = QtWidgets.QPushButton(Dialog, clicked = lambda:self.press_it("^2"))
+        self.Power2 = QtWidgets.QPushButton(Dialog, clicked = lambda:self.press_it("**"))
         self.Power2.setGeometry(QtCore.QRect(40, 130, 113, 32))
         self.Power2.setObjectName("Power2")
         self.zero = QtWidgets.QPushButton(Dialog, clicked = lambda:self.press_it("0"))
