@@ -2,8 +2,30 @@
 <ui version="4.0">
  <class>Dialog</class>
  <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>402</height>
+   </rect>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Form{
+    background:#202020;
+
+}
+
+QPushButton{
+    background:#d2d3d7;
+    border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    color:#202020;
+}</string>
   </property>
   <widget class="QPushButton" name="seven">
    <property name="geometry">
@@ -200,7 +222,7 @@
     <string>C</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Clear_entry">
+  <widget class="QPushButton" name="delete_entry">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -210,7 +232,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>CE</string>
+    <string>Del</string>
    </property>
   </widget>
   <widget class="QPushButton" name="Power2">
@@ -223,7 +245,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>x^2</string>
+    <string>Expo</string>
    </property>
   </widget>
   <widget class="QPushButton" name="zero">
@@ -273,6 +295,9 @@
     <enum>QFrame::Raised</enum>
    </property>
    <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="midLineWidth">
     <number>1</number>
    </property>
    <property name="text">
