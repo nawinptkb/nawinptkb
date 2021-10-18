@@ -142,6 +142,9 @@ class Ui_Dialog(object):
             #Output error to the screen
             self.OutputLabel.setText(str("Can't Divide with Zero"))
 
+        except EOFError:
+            self.OutputLabel.setText(str("Please take it easy"))
+
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
