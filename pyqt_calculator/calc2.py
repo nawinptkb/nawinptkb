@@ -99,7 +99,7 @@ class Ui_Dialog(object):
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
-#Remove character
+    #Remove character
     def remove_it(self):
         #Grab what's on the screen already
         screen = self.OutputLabel.text()
