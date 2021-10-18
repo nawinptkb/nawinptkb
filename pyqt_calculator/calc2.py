@@ -22,11 +22,13 @@ class Ui_Dialog(object):
 "\n"
 "QPushButton{\n"
 "    background:#d2d3d7;\n"
-"    border:none;\n"
+"    border:1px solid grey;\n"
 "    font-family: Arial, Helvetica, sans-serif;\n"
-"    font-size:20px;\n"
+"    font-size:15px;\n"
 "    color:#202020;\n"
 "}")
+        
+        
         self.seven = QtWidgets.QPushButton(Dialog, clicked = lambda:self.press_it("7"))
         self.seven.setGeometry(QtCore.QRect(40, 180, 113, 32))
         self.seven.setObjectName("seven")
@@ -59,6 +61,22 @@ class Ui_Dialog(object):
         self.Add.setObjectName("Add")
         self.Result = QtWidgets.QPushButton(Dialog, clicked = lambda:self.result())
         self.Result.setGeometry(QtCore.QRect(450, 340, 113, 32))
+        self.Result.setStyleSheet("QPushButton {\n"
+"\n"
+"border:1px solid gree;\n"
+"background-color:#55FFAA;\n"
+"\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton:pressed {\n"
+"\n"
+"background-color:#AAFFFF;\n"
+"\n"
+"\n"
+"}")
         self.Result.setObjectName("Result")
         self.Subtract = QtWidgets.QPushButton(Dialog, clicked = lambda:self.press_it("-"))
         self.Subtract.setGeometry(QtCore.QRect(450, 230, 113, 32))
@@ -95,9 +113,11 @@ class Ui_Dialog(object):
         self.OutputLabel.setMidLineWidth(1)
         self.OutputLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.OutputLabel.setObjectName("OutputLabel")
-
+    
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+
 
     #Remove character
     def remove_it(self):
@@ -117,8 +137,10 @@ class Ui_Dialog(object):
         else:
             self.OutputLabel.setText(f'{screen}.')
 
+ 
     #Pressing buttons algorithm
     def press_it(self,pressed):
+
         if pressed == "C":
             self.OutputLabel.setText("0")
 
@@ -129,9 +151,11 @@ class Ui_Dialog(object):
             #Concatenate the pressed button with what was there already
             self.OutputLabel.setText(f'{self.OutputLabel.text()}{pressed}')
 
+
     #Result Button
     def result(self):
         screen = self.OutputLabel.text()
+
         try:
             #Do the math
             answer = eval(screen)
@@ -144,11 +168,14 @@ class Ui_Dialog(object):
 
         except EOFError:
             self.OutputLabel.setText(str("Please take it easy"))
+        
+        except:
+            self.OutputLabel.setText(str("Error"))
 
-
+    #Each Button on the calculator
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Calculator"))
         self.seven.setText(_translate("Dialog", "7"))
         self.eight.setText(_translate("Dialog", "8"))
         self.nine.setText(_translate("Dialog", "9"))
@@ -159,9 +186,9 @@ class Ui_Dialog(object):
         self.two.setText(_translate("Dialog", "2"))
         self.three.setText(_translate("Dialog", "3"))
         self.Add.setText(_translate("Dialog", "+"))
-        self.Result.setText(_translate("Dialog", "="))
+        self.Result.setText(_translate("Dialog", "Result"))
         self.Subtract.setText(_translate("Dialog", "-"))
-        self.Multiply.setText(_translate("Dialog", "*"))
+        self.Multiply.setText(_translate("Dialog", "x"))
         self.Divide.setText(_translate("Dialog", "/"))
         self.Clear_input.setText(_translate("Dialog", "C"))
         self.delete_entry.setText(_translate("Dialog", "Del"))
