@@ -77,7 +77,7 @@ class Ui_Dialog(object):
         self.OutputLabel.setFont(font)
         self.OutputLabel.setFrameShape(QtWidgets.QFrame.Box)
         self.OutputLabel.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.OutputLabel.setLineWidth(1)
+        self.OutputLabel.setLineWidth(2)
         self.OutputLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.OutputLabel.setObjectName("OutputLabel")
 
@@ -111,7 +111,7 @@ class Ui_Dialog(object):
             #Check to see if starts with 0 and delete 0
             if self.OutputLabel.text() == "0":
                 self.OutputLabel.setText("")
-                #Concatenate the pressed button with what was there already
+            #Concatenate the pressed button with what was there already
             self.OutputLabel.setText(f'{self.OutputLabel.text()}{pressed}')
 
     #Result Button
