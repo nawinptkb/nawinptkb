@@ -113,7 +113,7 @@ class Ui_Dialog(object):
         self.OutputLabel.setMidLineWidth(1)
         self.OutputLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.OutputLabel.setObjectName("OutputLabel")
-    
+        
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
