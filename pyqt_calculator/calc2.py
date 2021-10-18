@@ -155,7 +155,7 @@ class Ui_Dialog(object):
     #Result Button
     def result(self):
         screen = self.OutputLabel.text()
-
+    
         try:
             #Do the math
             answer = eval(screen)
