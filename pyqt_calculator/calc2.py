@@ -27,6 +27,7 @@ class Ui_Dialog(object):
 "    font-size:15px;\n"
 "    color:#202020;\n"
 "}")
+
         
         
         self.seven = QtWidgets.QPushButton(Dialog, clicked = lambda:self.press_it("7"))
