@@ -119,7 +119,6 @@ class Ui_Dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
 
-
     #Remove character
     def remove_it(self):
         #Grab what's on the screen already
