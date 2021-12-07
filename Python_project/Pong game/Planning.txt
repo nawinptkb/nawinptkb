@@ -1,0 +1,26 @@
+- Create a Screen background (Completed)
+- Create moveable paddles (2 paddles) (Completed)
+        - user1
+        - user2
+- Create a ball with mechanisms moving constantly across the Screen (Completed)
+- Detect collision with wall and bounce back (Completed)
+- Detect collision with paddles (add score to each player) (Completed)
+- Detect when paddle misses the ball (Completed)
+- Keep track of the score of both players (Completed)
+
+- Create a timer to tell the players the amount of time they spend during the game (Completed)
+        - Can't change the color of the timer to black when ball.gameover(); (Completed)
+        
+- Create a system that keeps the data of players and store in the ScoreRecord (To be completed if possible)
+- Create a ScoreRecord (To be completed if possible)
+
+
+
+
+Total of 6 Files
+- Game.py (Completed)
+- Paddle.py (Completed)
+- Ball.py (Completed)
+- ScoreBoard.py (Completed)
+- Timer.py (Completed)
+- ScoreRecord.py (To be completed if possible)
