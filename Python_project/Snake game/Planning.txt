@@ -1,0 +1,14 @@
+- Create a snake Body
+- Make the snake to be able to move around
+- Make the movement controlable
+- Create snake food 
+- Detect the collision with food
+- Create a score board
+- Detect the collision with wall (Make gameover show up on the screen)
+- Detect collision with its own tail (Make gameover show up on the screen)
+
+Should end up in 3 files:
+- game.py (Completed)
+- Snake.py (Completed)
+- food.py (Completed)
+- scoreboard.py (Completed)
